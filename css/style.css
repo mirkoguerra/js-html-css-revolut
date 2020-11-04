@@ -1,0 +1,32 @@
+/* INIZIALIZZAZIONE */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* HELPER */
+.border {
+  border: 1px solid black;
+}
+/* NAV-BAR */
+section.nav-bar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+section.nav-bar div.left-nav-bar, section.nav-bar div.right-nav-bar {
+  height: 100px;
+}
+/* LEFT-NAV-BAR */
+section.nav-bar div.left-nav-bar {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+}
+/* RIGHT-NAV-BAR */
+section.nav-bar div.right-nav-bar {
+  width: 65%;
+  display: flex;
+  flex-direction: row-reverse;
+}
