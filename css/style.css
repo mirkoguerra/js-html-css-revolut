@@ -4,84 +4,31 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* HELPER */
-.border {
-  border: 1px solid black;
-}
-
-/* NAV-BAR */
-section.nav-bar {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-}
-section.nav-bar div.left-nav-bar, section.nav-bar div.right-nav-bar {
-  height: 100px;
-}
-/* LEFT-NAV-BAR */
-section.nav-bar div.left-nav-bar {
-  width: 35%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-section.nav-bar div.left-nav-bar * {
-  cursor: pointer;
-}
-section.nav-bar div.left-nav-bar img {
-  height: 40px;
-}
-section.nav-bar div.left-nav-bar span:first-of-type {
-  margin-right: 5px;
-}
-section.nav-bar div.left-nav-bar span:nth-of-type(2) {
-  color: grey;
-}
-section.nav-bar div.left-nav-bar span:nth-of-type(2):hover {
-  color: black;
-}
-/* RIGHT-NAV-BAR */
-section.nav-bar div.right-nav-bar {
-  width: 65%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-section.nav-bar div.right-nav-bar a {
+/* ECC */
+a {
   text-decoration: none;
-  font-size: 18px;
-  margin-right: 20px;
 }
-section.nav-bar div.right-nav-bar div.buttons a {
-  padding: 10px;
-  border-radius: 10px;
+ul{
+  list-style-type: none;
 }
-section.nav-bar div.right-nav-bar div.buttons a:first-of-type {
-  background-color: lightgrey;
-  color: black;
+ul.general {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
 }
-section.nav-bar div.right-nav-bar div.buttons a:first-of-type:hover {
-  background-color: grey;
+ul.general li.has-dropdown {
+  position: relative;
 }
-section.nav-bar div.right-nav-bar div.buttons a:nth-of-type(2) {
-  background-color: black;
-  color: white;
-}
-section.nav-bar div.right-nav-bar div.buttons a:nth-of-type(2):hover {
-  opacity: 0.8;
-}
-section.nav-bar div.right-nav-bar div.links a {
-  color: grey;
-}
-section.nav-bar div.right-nav-bar div.links a:hover {
-  color: black;
-}
-/* GHOST-BOXES */
-section.ghost-boxes div.features-box {
-  display: none;
-  width: 800px;
-  height: 400px;
+ul.general ul.dropdown {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
   position: absolute;
-  right: 60px;
+  top: 20px;
+  left: 30px;
+  display: none;
+}
+ul.general ul.dropdown.active {
+  display: block;
 }
