@@ -23,6 +23,23 @@ section.nav-bar div.left-nav-bar {
   width: 35%;
   display: flex;
   flex-direction: row;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+section.nav-bar div.left-nav-bar * {
+  cursor: pointer;
+}
+section.nav-bar div.left-nav-bar img {
+  height: 40px;
+}
+section.nav-bar div.left-nav-bar span:first-of-type {
+  margin-right: 5px;
+}
+section.nav-bar div.left-nav-bar span:nth-of-type(2) {
+  color: grey;
+}
+section.nav-bar div.left-nav-bar span:nth-of-type(2):hover {
+  color: black;
 }
 /* RIGHT-NAV-BAR */
 section.nav-bar div.right-nav-bar {
