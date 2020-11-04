@@ -85,6 +85,3 @@ section.ghost-boxes div.features-box {
   position: absolute;
   right: 60px;
 }
-.visible {
-  display: flex;
-}
