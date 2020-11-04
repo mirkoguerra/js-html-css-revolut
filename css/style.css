@@ -23,7 +23,6 @@ section.nav-bar div.left-nav-bar {
   width: 35%;
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-start; */
   align-items: center;
 }
 section.nav-bar div.left-nav-bar * {
@@ -46,4 +45,34 @@ section.nav-bar div.right-nav-bar {
   width: 65%;
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
+}
+section.nav-bar div.right-nav-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+}
+section.nav-bar div.right-nav-bar div.buttons a {
+  padding: 10px;
+  border-radius: 10px;
+}
+section.nav-bar div.right-nav-bar div.buttons a:first-of-type {
+  background-color: lightgrey;
+  color: black;
+}
+section.nav-bar div.right-nav-bar div.buttons a:first-of-type:hover {
+  background-color: grey;
+}
+section.nav-bar div.right-nav-bar div.buttons a:nth-of-type(2) {
+  background-color: black;
+  color: white;
+}
+section.nav-bar div.right-nav-bar div.buttons a:nth-of-type(2):hover {
+  opacity: 0.8;
+}
+section.nav-bar div.right-nav-bar div.links a {
+  color: grey;
+}
+section.nav-bar div.right-nav-bar div.links a:hover {
+  color: black;
 }
