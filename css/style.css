@@ -4,31 +4,96 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* ECC */
-a {
-  text-decoration: none;
+/* HELPER */
+.border {
+  border: 1px solid lightgrey;
+  border-style: dotted;
+  border-radius: 5px;
 }
-ul{
-  list-style-type: none;
-}
-ul.general {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-ul.general li.has-dropdown {
+.rel {
   position: relative;
 }
-ul.general ul.dropdown {
-  border: 1px solid black;
+/* NAV-BAR */
+section.nav-bar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+section.nav-bar div.left-nav-bar, section.nav-bar div.right-nav-bar {
   height: 100px;
-  width: 100px;
+}
+/* LEFT-NAV-BAR */
+section.nav-bar div.left-nav-bar {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section.nav-bar div.left-nav-bar * {
+  cursor: pointer;
+}
+section.nav-bar div.left-nav-bar img {
+  height: 40px;
+}
+section.nav-bar div.left-nav-bar span:first-of-type {
+  margin-right: 5px;
+}
+section.nav-bar div.left-nav-bar span:nth-of-type(2) {
+  color: grey;
+}
+section.nav-bar div.left-nav-bar span:nth-of-type(2):hover {
+  color: black;
+}
+/* RIGHT-NAV-BAR */
+section.nav-bar div.right-nav-bar {
+  width: 65%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+section.nav-bar div.right-nav-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+}
+section.nav-bar div.right-nav-bar div.buttons a {
+  padding: 10px;
+  border-radius: 10px;
+}
+section.nav-bar div.right-nav-bar div.buttons a:first-of-type {
+  background-color: lightgrey;
+  color: black;
+}
+section.nav-bar div.right-nav-bar div.buttons a:first-of-type:hover {
+  background-color: grey;
+}
+section.nav-bar div.right-nav-bar div.buttons a:nth-of-type(2) {
+  background-color: black;
+  color: white;
+}
+section.nav-bar div.right-nav-bar div.buttons a:nth-of-type(2):hover {
+  opacity: 0.8;
+}
+section.nav-bar div.right-nav-bar ul.links li {
+  display: inline;
+}
+section.nav-bar div.right-nav-bar ul.links a {
+  color: grey;
+}
+section.nav-bar div.right-nav-bar ul.links a:hover {
+  color: black;
+}
+.dropdown {
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 40px;
+  left: -10px;
+  width: 100px;
   display: none;
 }
-ul.general ul.dropdown.active {
+.dropdown.active {
   display: block;
+}
+.dropdown li {
+  padding: 20px;
 }
